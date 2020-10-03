@@ -44,8 +44,8 @@ Terminal(){
 	 JScrollPane scrollPane = new JScrollPane(Iarea);
 	 JScrollPane scrollPane1 = new JScrollPane(Uarea);
 	 
-	Alabel.setText("<HTML>HELLO FRIENDS THIS IS SIMPLE AND EASY TO USE <BR> LINUX GRAPHUCAL TERMNAL HAI USING THIS TOOL YOU CAN EASLY INSTALL <BR>"
-			+ "INSTALL ANY SOFTWARE<HTML>");
+	Alabel.setText("<HTML>HELLO FRIENDS THIS IS SIMPLE AND EASY TO USE <BR> LINUX GRAPHUCAL TERMNAL USING THIS TOOL YOU CAN EASLY INSTALL <BR>"
+			+ "INSTALL ANY SOFTWARE with .deb file<HTML>");
 	button1.setText("Select file");
 	button1.addActionListener(this);
 	button2.setText("Install");
