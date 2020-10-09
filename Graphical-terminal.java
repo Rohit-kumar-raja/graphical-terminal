@@ -8,7 +8,7 @@ import java.io.File;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-class Terminal extends JFrame implements ActionListener{
+class Graphical-terminal extends JFrame implements ActionListener{
 JFrame frame =new JFrame("GUI-Terminal");
 JPanel panel1,panel2,panel3;  
 JTextField field,pfield;
