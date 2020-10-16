@@ -1,5 +1,6 @@
 
 import javax.swing.*;
+import java.io.*;
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
@@ -19,8 +20,6 @@ JLabel Iarea,Uarea;
 String filepath;
 String line,line1;
 Container cp = frame.getContentPane();
-
-      //class area
 
 Terminal(){
 	
@@ -68,11 +67,9 @@ Terminal(){
 	panel1.add(field);
 	panel1.add(button1);
 	panel1.add(button2);
-  // panel1.add(scrollPane);
 	panel2.add(Ubutton);
 	panel2.add(Ulabel);
 	panel2.add(pfield);
-// panel2.add(scrollPane1);
 	panel3.add(Alabel);
 
 	tab.addTab("Install", panel1);
@@ -97,7 +94,6 @@ Terminal(){
 		    JFileChooser fc=new JFileChooser();    
 		    int i=fc.showOpenDialog(this);    
 		    if(i==JFileChooser.APPROVE_OPTION){
-		    	// JOptionPane.showConfirmDialog(this,"Are you sure "); 
 		        File f=fc.getSelectedFile(); 
 		       
 		         filepath=f.getPath();
@@ -112,7 +108,6 @@ Terminal(){
 		if(file.exists()) {
               Process process = Runtime.getRuntime().exec("dpkg -i "+filepath); 
 			BufferedReader reader = new BufferedReader(new InputStreamReader (process.getInputStream()));
-			//String line;
 			while((line = reader.readLine()) != null) {
 			System.out.println(line);
 				Iarea.setText("<HTML>"+line+"<HTML>");
